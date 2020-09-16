@@ -10,6 +10,7 @@ import Autocomplete from "@material-ui/lab/Autocomplete";
 import PropTypes from "prop-types";
 
 // Internal dependencies
+import citys from "assets/citys.json";
 import logo from "assets/pngwave.png";
 import {
   HeaderContainer,
@@ -27,9 +28,8 @@ const Header = () => (
     </LogoContainer>
     <div style={{ width: "45%" }}>
       <Autocomplete
-        id="free-solo-demo"
         freeSolo
-        options={[{ title: "un titulo" }].map((option) => option.title)}
+        options={citys.map(({ name }) => name)}
         renderInput={(params) => (
           <TextField
             {...params}

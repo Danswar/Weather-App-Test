@@ -1,16 +1,22 @@
 // SummaryWeek.jsx
 // Component to show the weather for next 5 days
 
+// External dependencies
 import React from "react";
+
+// Internal dependencies
+import DayWeather from "./components/DayWeather";
+import { SummaryWeekContainer } from "./styles";
+
+const days = ["lun.", "mar.", "mier.", "jue.", "vie."];
 
 const SummaryWeek = () => {
   return (
-    <div>
-      <div>
-        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" />
-        <p>Lun</p>
-      </div>
-    </div>
+    <SummaryWeekContainer>
+      {days.map((day) => (
+        <DayWeather day={day} />
+      ))}
+    </SummaryWeekContainer>
   );
 };
 

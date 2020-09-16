@@ -1,0 +1,83 @@
+[
+  {
+    "name": "La Plata, Buenos Aires, Argentina",
+    "lat": -34.920345,
+    "log": -57.969559
+  },
+  {
+    "name": "Rosario, Sante Fe, Argentina",
+    "lat": -32.950001,
+    "log": -60.666668
+  },
+  {
+    "name": "Cordoba, Cordoba Province, Argentina",
+    "lat": -31.416668,
+    "log": -64.183334
+  },
+  {
+    "name": "Mendoza, Capital Department, Mendoza Province, Argentina",
+    "lat": -32.888355,
+    "log": -68.838844
+  },
+  {
+    "name": "Jujuy, Jujuy Province, Argentina",
+    "lat": -24.18434,
+    "log": -65.302177
+  },
+  {
+    "name": "Tandil, Buenos Aires Province, Argentina",
+    "lat": -37.32048,
+    "log": -59.132904
+  },
+  {
+    "name": "Bragado, Buenos Aires Province, Argentina",
+    "lat": -35.101933,
+    "log": -60.438538
+  },
+  {
+    "name": "San Carlos de Bariloche, Río Negro Province, Argentina",
+    "lat": -41.134258,
+    "log": -71.308525
+  },
+  {
+    "name": "San Miguel de Tucumán, Tucumán, Argentina",
+    "lat": -26.808285,
+    "log": -65.21759
+  },
+  {
+    "name": "San Rafael, Mendoza Province, Argentina",
+    "lat": -34.587997,
+    "log": -68.285522
+  },
+  {
+    "name": "Salta, Salta Province, Argentina",
+    "lat": -24.782932,
+    "log": -65.412155
+  },
+  {
+    "name": "Cruz del Eje, Córdoba Province, Argentina",
+    "lat": -30.718227,
+    "log": -64.796677
+  },
+  {
+    "name": "Mar del Plata, Buenos Aires Province, Argentina",
+    "lat": -37.979858,
+    "log": -57.589794
+  },
+  {
+    "name": "Corrientes, Corrientes Province, Argentina",
+    "lat": -27.471226,
+    "log": -58.839584
+  },
+  {
+    "name": "Gualeguaychú, Entre Rios, Argentina",
+    "lat": -33.000603,
+    "log": -58.519363
+  },
+  { "name": "Buenos Aires, Argentina", "lat": -34.603722, "log": -58.381592 },
+  {
+    "name": "Florencio Varela, Argentina",
+    "lat": -34.796581,
+    "log": -58.276012
+  }
+]
