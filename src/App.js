@@ -8,12 +8,13 @@ import { ThemeProvider } from "styled-components";
 // Intenal dependencies
 import MainLayout from "components/MainLayout";
 import theme from "theme";
+import LocalWeather from "components/LocalWeather";
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <MainLayout>
-        <h1>Hello app</h1>
+        <LocalWeather />
       </MainLayout>
     </ThemeProvider>
   );
