@@ -9,12 +9,14 @@ import { ThemeProvider } from "styled-components";
 import MainLayout from "components/MainLayout";
 import theme from "theme";
 import LocalWeather from "components/LocalWeather";
+import SummaryWeek from "components/SummaryWeek";
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <MainLayout>
         <LocalWeather />
+        <SummaryWeek />
       </MainLayout>
     </ThemeProvider>
   );

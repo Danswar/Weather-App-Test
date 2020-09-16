@@ -33,6 +33,15 @@ const WeatherState = styled.h2`
   text-align: center;
 `;
 
+const City = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const CityName = styled.h2``;
+
+const Time = styled.p``;
+
 export {
   LocationContainer,
   LocalWeatherContainer,
@@ -41,4 +50,7 @@ export {
   Temperature,
   Title,
   WeatherState,
+  CityName,
+  City,
+  Time,
 };
