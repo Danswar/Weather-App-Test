@@ -7,10 +7,8 @@ import LocationOnIcon from "@material-ui/icons/LocationOn";
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 
-import PropTypes from "prop-types";
-
 // Internal dependencies
-import citys from "assets/citys.json";
+import cities from "assets/city.list.json";
 import logo from "assets/pngwave.png";
 import {
   HeaderContainer,
@@ -29,7 +27,7 @@ const Header = () => (
     <div style={{ width: "45%" }}>
       <Autocomplete
         freeSolo
-        options={citys.map(({ name }) => name)}
+        options={cities.map(({ name }) => name)}
         renderInput={(params) => (
           <TextField
             {...params}
@@ -49,7 +47,5 @@ const Header = () => (
     </LocationContainer>
   </HeaderContainer>
 );
-
-Header.propTypes = {};
 
 export default Header;
