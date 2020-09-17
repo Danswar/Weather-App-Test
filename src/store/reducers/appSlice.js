@@ -6,13 +6,19 @@ export const appSlice = createSlice({
     currentCity: {
       name: "",
       lat: 0,
-      log: 0,
+      lon: 0,
     },
     appLoading: false,
   },
   reducers: {
-    setAppLoading: (state, action) => (state.appLoading = action.payload),
-    setCurrentCity: (state, action) => (state.currentCity = action.payload),
+    setAppLoading: (state, action) => {
+      state.appLoading = action.payload;
+      return state;
+    },
+    setCurrentCity: (state, action) => {
+      state.currentCity = action.payload;
+      return state;
+    },
   },
 });
 

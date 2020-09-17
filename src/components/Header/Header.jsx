@@ -4,11 +4,9 @@
 // External dependencies
 import React from "react";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
-import TextField from "@material-ui/core/TextField";
-import Autocomplete from "@material-ui/lab/Autocomplete";
 
 // Internal dependencies
-import cities from "assets/city.list.json";
+import InputSearch from "components/InputSearch";
 import logo from "assets/pngwave.png";
 import {
   HeaderContainer,
@@ -24,20 +22,7 @@ const Header = () => (
       <Logo src={logo} />
       <AppTitle>WeatherApp</AppTitle>
     </LogoContainer>
-    <div style={{ width: "45%" }}>
-      <Autocomplete
-        freeSolo
-        options={cities.map(({ name }) => name)}
-        renderInput={(params) => (
-          <TextField
-            {...params}
-            margin="normal"
-            variant="outlined"
-            style={{ background: "white" }}
-          />
-        )}
-      />
-    </div>
+    <InputSearch />
     <LocationContainer>
       <div>
         <p>Buenos aires</p>
