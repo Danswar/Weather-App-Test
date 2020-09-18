@@ -3,9 +3,9 @@
 
 // External dependencies
 import React from "react";
+import { useSelector } from "react-redux";
 
 // Internal dependencies
-import weatherImg from "assets/sun-with-cloud.png";
 import {
   ImageWidget,
   WeatherWidgetContainer,
@@ -15,13 +15,17 @@ import {
 } from "../styles";
 
 const WeatherWidget = () => {
+  const { temperature, description, srcIcon } = useSelector(
+    (state) => state.weather.today
+  );
+
   return (
     <WeatherWidgetContainer>
       <Temperature>
-        <ImageWidget src={weatherImg} />
-        <Title>16° c</Title>
+        <ImageWidget src={srcIcon} />
+        <Title>{`${temperature}° c`}</Title>
       </Temperature>
-      <WeatherState>Soleado</WeatherState>
+      <WeatherState>{description}</WeatherState>
     </WeatherWidgetContainer>
   );
 };
