@@ -1,6 +1,7 @@
 // getTodayWeather.js
 // Function to normalize the data for current weather from response
 
+// Util for parse the time
 const getTime = (timestamp) => {
   if (!timestamp) return {};
 
@@ -12,6 +13,7 @@ const getTime = (timestamp) => {
   };
 };
 
+// Util for normalize weather item
 const normalizeItem = (item) => {
   const {
     temp,

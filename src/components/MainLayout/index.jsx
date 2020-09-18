@@ -7,7 +7,6 @@ import { oneOfType, arrayOf, node } from "prop-types";
 
 // Internal dependencies
 import Header from "components/Header";
-import Footer from "components/Footer";
 import styled from "./styles";
 
 const MainLayout = ({ children }) => {
@@ -15,7 +14,6 @@ const MainLayout = ({ children }) => {
     <styled.LayoutContainer>
       <Header data-test="header" />
       <styled.ContentContainer>{children}</styled.ContentContainer>
-      <Footer data-test="footer" />
     </styled.LayoutContainer>
   );
 };

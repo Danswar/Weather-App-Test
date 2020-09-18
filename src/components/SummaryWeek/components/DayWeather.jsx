@@ -7,7 +7,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import Fade from "@material-ui/core/Fade";
 
 // Internal dependencies
-import { DayWeatherContnainer, DayIcon, DayName } from "../styles";
+import { DayWeatherContnainer, DayIcon, Text } from "../styles";
 
 const DayWeather = ({ temperature, description, srcIcon, time }) => {
   const { min, max, day } = temperature;
@@ -28,8 +28,8 @@ const DayWeather = ({ temperature, description, srcIcon, time }) => {
     >
       <DayWeatherContnainer>
         <DayIcon src={srcIcon} />
-        <p>{description}</p>
-        <DayName>{dayOfWeek}</DayName>
+        <Text>{description}</Text>
+        <Text>{dayOfWeek}</Text>
       </DayWeatherContnainer>
     </Tooltip>
   );

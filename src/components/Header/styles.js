@@ -5,7 +5,7 @@ const HeaderContainer = styled.div`
   display: flex;
   flex-wrap: no-wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: ${({ theme }) => theme.palette.primary.dark};
 `;
 

@@ -16,13 +16,15 @@ const DayWeatherContnainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.3rem 1.5rem;
+  padding: 0.3rem 0.7rem;
 `;
 
 const DayIcon = styled.img`
-  width: 65px;
+  width: 45px;
 `;
 
-const DayName = styled.p``;
+const Text = styled.p`
+  font-size: 10px;
+`;
 
-export { SummaryWeekContainer, DayWeatherContnainer, DayIcon, DayName };
+export { SummaryWeekContainer, DayWeatherContnainer, DayIcon, Text };

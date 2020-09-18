@@ -11,18 +11,12 @@ import MainLayout from "components/MainLayout";
 import theme from "theme";
 import LocalWeather from "components/LocalWeather";
 import SummaryWeek from "components/SummaryWeek";
-import { changeCity } from "store/thunks/changeCity";
+import init from "store/thunks/init";
 
 const App = () => {
+  // Init
   const dispatch = useDispatch();
-
-  dispatch(
-    changeCity({
-      name: "Ciudad Autónoma de Buenos Aires",
-      lon: -58.450001,
-      lat: -34.599998,
-    })
-  );
+  dispatch(init());
 
   return (
     <ThemeProvider theme={theme}>

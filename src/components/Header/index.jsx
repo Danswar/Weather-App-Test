@@ -24,10 +24,7 @@ const Header = () => (
     </LogoContainer>
     <InputSearch />
     <LocationContainer>
-      <div>
-        <p>Buenos aires</p>
-        <p>16 septiempre 13:51</p>
-      </div>
+      <div></div>
       <LocationOnIcon />
     </LocationContainer>
   </HeaderContainer>

@@ -12,16 +12,16 @@ import { SummaryWeekContainer } from "./styles";
 const SummaryWeek = () => {
   const { week } = useSelector((state) => state.weather);
 
-  const DaysWeather = week.map(
-    ({ temperature, description, srcIcon, time }) => (
+  const DaysWeather = week
+    .slice(1, 6)
+    .map(({ temperature, description, srcIcon, time }) => (
       <DayWeather
         temperature={temperature}
         description={description}
         srcIcon={srcIcon}
         time={time}
       />
-    )
-  );
+    ));
 
   return <SummaryWeekContainer>{DaysWeather}</SummaryWeekContainer>;
 };

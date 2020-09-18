@@ -22,10 +22,4 @@ describe("MainLayout", () => {
     const children = Component.find('[data-test="children"]');
     expect(children.length).toBe(1);
   });
-
-  it("Should renders Footer", () => {
-    const Component = shallow(<MainLayout>{MOCKED_CHILDREN}</MainLayout>);
-    const Footer = Component.find('[data-test="footer"]');
-    expect(Footer.length).toBe(1);
-  });
 });
