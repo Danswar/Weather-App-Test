@@ -8,7 +8,7 @@ import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 
 // Internal dependencies
-import { getWeather } from "store/thunks/getWeather";
+import { changeCity } from "store/thunks/changeCity";
 import cities from "assets/city.list.json";
 
 const InputSearch = () => {
@@ -16,7 +16,7 @@ const InputSearch = () => {
 
   const handleCityChange = (_, value) => {
     if (!value) return;
-    dispatch(getWeather(value));
+    dispatch(changeCity(value));
   };
 
   return (
