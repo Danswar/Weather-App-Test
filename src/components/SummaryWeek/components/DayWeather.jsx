@@ -1,17 +1,25 @@
+// DayWeather.js
+// Component for weather summary of a single day
+
+// External dependencies
 import React from "react";
 import Tooltip from "@material-ui/core/Tooltip";
 import Fade from "@material-ui/core/Fade";
 
+// Internal dependencies
 import { DayWeatherContnainer, DayIcon, DayName } from "../styles";
 
-const DayWeather = ({ day }) => {
+const DayWeather = ({ temperature, description, srcIcon, time }) => {
+  const { min, max, day } = temperature;
+  const { dayOfWeek } = time || {};
+
   return (
     <Tooltip
       title={
         <div>
-          <p>min: 30 c°</p>
-          <p>max: 20 c°</p>
-          <p>max: 20 c°</p>
+          <p>{`min: ${min} c°`}</p>
+          <p>{`max: ${max} c°`} </p>
+          <p>{`day: ${day} c°`} </p>
         </div>
       }
       TransitionComponent={Fade}
@@ -19,8 +27,9 @@ const DayWeather = ({ day }) => {
       placement="top"
     >
       <DayWeatherContnainer>
-        <DayIcon src="http://openweathermap.org/img/wn/10d@2x.png" />
-        <DayName>{day}</DayName>
+        <DayIcon src={srcIcon} />
+        <p>{description}</p>
+        <DayName>{dayOfWeek}</DayName>
       </DayWeatherContnainer>
     </Tooltip>
   );

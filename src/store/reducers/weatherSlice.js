@@ -8,7 +8,7 @@ export const weatherSlice = createSlice({
       description: "",
       srcIcon: "",
     },
-    week: {},
+    week: [],
   },
   reducers: {
     setTodayWeather: (state, action) => {

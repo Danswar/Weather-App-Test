@@ -1,3 +1,7 @@
+// changeCity.js
+// Script to change the city and side effects
+
+// Internal dependencies
 import { setAppLoading, setCurrentCity } from "store/reducers/appSlice";
 import { setTodayWeather, setWeekWeather } from "store/reducers/weatherSlice";
 import normalizeFromResponse from "utils/normalizeFromResponse";
